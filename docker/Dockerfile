@@ -1,4 +1,3 @@
-#FROM openjdk:11-jdk-stretch
 FROM eclipse-temurin:11
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -55,8 +54,8 @@ RUN curl -fsSL https://github.com/krallin/tini/releases/download/${TINI_VERSION}
 # jenkins version being bundled in this docker image
 ARG JENKINS_VERSION
 # jenkins.war checksum, download will be validated using it
-ARG JENKINS_SHA=9B642CD407B1EA9B3F90C0F54D7D42B7AA5FDCD42CBA317E375A308A398D71D4
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.380}
+ARG JENKINS_SHA=02c7453f7dd032d9fe6aaf12acbb74561a1bace59ac833cfa60ee67887086376
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.385}
 ENV JENKINS_SHA ${JENKINS_SHA}
 
 # Can be used to customize where jenkins.war get downloaded from
