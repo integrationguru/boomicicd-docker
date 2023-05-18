@@ -1,7 +1,8 @@
 cloudbees-folder
-scm-api:latest
+scm-api
 credentials
 git-client
+bouncycastle-api
 git
 github-api
 github
@@ -19,3 +20,4 @@ timestamper
 folder-properties
 authentication-tokens
 ws-cleanup
+build-timeout
